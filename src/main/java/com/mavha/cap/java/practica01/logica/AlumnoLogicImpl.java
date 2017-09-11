@@ -27,5 +27,14 @@ public class AlumnoLogicImpl implements AlumnoLogic{
         Integer cantidadCursos = a.getCursosTerminados().size()+a.getCursosInscripto().size();                
         return gasto/cantidadCursos;
     }
+
+    @Override
+    public void aprobar(Alumno a,Curso c) {
+            boolean cursoEncontrado = a.getCursosInscripto().remove(c);
+            if(cursoEncontrado){
+                a.getCursosTerminados().add(c);
+                a.setCreditos(a.getCreditos()+c.getCreditosOtorgados());
+            }
+    }
     
 }

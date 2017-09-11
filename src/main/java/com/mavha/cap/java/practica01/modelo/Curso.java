@@ -18,11 +18,12 @@ public class Curso {
     private String nombre;   
     private Integer creditosOtorgados;
     private Integer cupo;
+    private Integer horasCatedra;    
     private Set<Alumno> alumnosInscriptos;
     private Double costo;
     private boolean cerrado;
     //
-
+    private Docente docenteAsignado;
     public Curso() {
         this.id = ++Curso._GENERADOR_ID_CURSO;                
         this.alumnosInscriptos=new HashSet<>();
@@ -91,8 +92,21 @@ public class Curso {
     public void setCerrado(boolean cerrado) {
         this.cerrado = cerrado;
     }
-    
-    
-    
+
+    public Integer getHorasCatedra() {
+        return horasCatedra;
+    }
+
+    public void setHorasCatedra(Integer horasCatedra) {
+        this.horasCatedra = horasCatedra;
+    }
+
+    public Docente getDocenteAsignado() {
+        return docenteAsignado;
+    }
+
+    public void setDocenteAsignado(Docente docenteAsignado) {
+        this.docenteAsignado = docenteAsignado;
+    }    
     
 }

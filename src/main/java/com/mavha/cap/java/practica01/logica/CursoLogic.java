@@ -7,6 +7,7 @@ package com.mavha.cap.java.practica01.logica;
 
 import com.mavha.cap.java.practica01.modelo.Alumno;
 import com.mavha.cap.java.practica01.modelo.Curso;
+import com.mavha.cap.java.practica01.modelo.Docente;
 
 /**
  *
@@ -15,4 +16,5 @@ import com.mavha.cap.java.practica01.modelo.Curso;
 public interface CursoLogic {
     public void inscribirAlumno(Curso c,Alumno a);
     public void aprobarAlumno(Curso c, Alumno a);
+    public void asignarDocente(Curso c,Docente d) throws PresupuestoNoSuficienteException;
 }

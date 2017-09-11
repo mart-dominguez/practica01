@@ -6,6 +6,7 @@
 package com.mavha.cap.java.practica01.logica;
 
 import com.mavha.cap.java.practica01.modelo.Alumno;
+import com.mavha.cap.java.practica01.modelo.Curso;
 
 /**
  *
@@ -20,5 +21,14 @@ public interface AlumnoLogic {
      * @param a
      * @return 
      */
-     public Double costoPromedio (Alumno a);
+    public Double costoPromedio (Alumno a);
+     
+    /**
+     * Dado un curso, lo elimina de la lista de cursos de cursos inscriptos 
+     * y lo agrega a la lista de cursos aprobados. 
+     * @param a
+     * @param c 
+     */
+    public void aprobar (Alumno a,Curso c);
+
 }

@@ -8,7 +8,6 @@ package com.mavha.cap.java.practica01.logica;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -16,11 +15,13 @@ import static org.junit.Assert.*;
  */
 public class AlumnoLogicImplTest {
     
+    
     public AlumnoLogicImplTest() {
     }
     
     @Before
     public void setUp() {
+
     }
     
     @After
@@ -33,5 +34,5 @@ public class AlumnoLogicImplTest {
     @Test
     public void testCostoPromedio() {
     }
-    
+
 }
